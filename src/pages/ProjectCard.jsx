@@ -1,14 +1,13 @@
 export function ProjectCard({ title, url, tags, repo, delay }) {
   return (
-    <div className="card fade-in" style={{ animationDelay: `${delay}s` }}>
-      <a
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="card-arrow"
-      >
-        ↗
-      </a>
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="card fade-in"
+      style={{ animationDelay: `${delay}s` }}
+    >
+      <div className="card-arrow">↗</div>
       <div className="card-title">
         <a href={url} target="_blank" rel="noopener noreferrer">
           {title}
@@ -19,14 +18,7 @@ export function ProjectCard({ title, url, tags, repo, delay }) {
           href={repo}
           target="_blank"
           rel="noopener noreferrer"
-          style={{
-            fontFamily: "var(--font-mono)",
-            fontSize: "0.72rem",
-            color: "var(--green)",
-            textDecoration: "none",
-            display: "block",
-            marginTop: "0.35rem",
-          }}
+          className="repo"
         >
           View Repo →
         </a>
@@ -38,6 +30,6 @@ export function ProjectCard({ title, url, tags, repo, delay }) {
           </span>
         ))}
       </div>
-    </div>
+    </a>
   );
 }

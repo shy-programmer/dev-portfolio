@@ -279,6 +279,21 @@ section {
   margin-bottom: 3rem;
 }
 
+/* PROJECT GROUPS */
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.project-title > span {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--green);
+  letter-spacing: 0.1em;
+}
+
 /* PROJECT CARDS */
 .projects-grid {
   display: grid;
@@ -376,6 +391,15 @@ section {
 .card:hover .card-arrow {
   color: var(--green);
   transform: translate(2px, -2px);
+}
+
+.repo {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--green);
+  text-decoration: none;
+  display: block;
+  margin-top: 0.35rem;  
 }
 
 /* SOCIALS */
