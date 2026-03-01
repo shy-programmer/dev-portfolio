@@ -64,12 +64,12 @@ export const selectedProjects = [
     export const freecodecamp = [
       { title: "Request Header Parser", url: "https://header-parser-sqdj.onrender.com/" },
       { title: "Timestamp Microservice", url: "https://timestamp-microservice-sa54.onrender.com/" },
-      { title: "URL Shortener Microservice", url: "https://url-shortner-api-g8ln.onrender.com/" },
+      // { title: "URL Shortener Microservice", url: "https://url-shortner-api-g8ln.onrender.com/" },
     ];
 
     export const socials = [
       { name: "GitHub", handle: "@shy-programmer", url: "https://github.com/shy-programmer", icon: "🐙" },
-      { name: "LinkedIn", handle: "Abdulazeez Arowolo", url: "https://www.linkedin.com/in/abdulazeez-arowolo-8230671a1", icon: "💼" },
+      { name: "LinkedIn", handle: "Abdulazeez Arowolo", url: "https://www.linkedin.com/in/abdulazeez-arowolo-lc", icon: "💼" },
       { name: "Twitter / X", handle: "@shy_programmer", url: "https://twitter.com/shy_programmer", icon: "🐦" },
       { name: "Resume", handle: "View full CV", url: "https://docs.google.com/document/d/1awgTd7B3uojMBh9hDUE10G_XSLMRPMZdu6-n2RKhJxM/edit?usp=sharing", icon: "📄" },
     ];
