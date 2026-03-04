@@ -3,7 +3,7 @@ export function Navbar({ active, setActive }) {
     <nav>
       <div className="nav-logo">~/shy-programmer</div>
       <div className="nav-links">
-        {["home", "projects", "socials"].map((link) => (
+        {["home", "projects", "socials", "contact"].map((link) => (
           <button
             key={link}
             className={`nav-link ${active === link ? "active" : ""}`}

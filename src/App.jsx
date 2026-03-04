@@ -9,6 +9,7 @@ import {
 } from "./data";
 import { ProjectGroup } from "./pages/ProjectGroup";
 import { SocialCard } from "./pages/SocialCard";
+import { ContactForm } from "./pages/ContactForm";
 import "./App.css";
 
 function App() {
@@ -47,9 +48,9 @@ function App() {
           already.
         </p>
         <p className="hero-bio fade-in">
-          Full-stack developer with great interest in complex system building. I work with
-          the MERN stack, TypeScript, and whatever else gets the
-          job done.
+          Full-stack developer with great interest in complex system building. I
+          work with the MERN stack, TypeScript, and whatever else gets the job
+          done.
         </p>
         <div className="hero-ctas fade-in">
           <a
@@ -163,13 +164,23 @@ function App() {
 
       {/* SOCIALS */}
       <section id="socials">
-        <p className="section-label">Socials</p>
-        <h2 className="section-title">Contact me</h2>
+        <p className="section-label">Networking</p>
+        <h2 className="section-title">Socials</h2>
         <div className="socials-grid">
           {socials.map((s, i) => (
             <SocialCard key={s.name} {...s} />
           ))}
         </div>
+      </section>
+
+      <section id="contact">
+      <p className="section-label">Get In Touch</p>
+      <h2 className="section-title">Contact Me</h2>
+      <p className="section-sub">
+        Have a project, opportunity, or just want to say hi? Drop a message and I'll get back to you.
+      </p>
+      <div className="divider" />
+      <ContactForm />
       </section>
 
       <footer>
